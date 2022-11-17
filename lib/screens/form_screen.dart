@@ -11,7 +11,6 @@ class _FormScreenState extends State<FormScreen> {
   TextEditingController nameController = TextEditingController();
   TextEditingController difficultyController = TextEditingController();
   TextEditingController imageController = TextEditingController();
-  int number = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +46,7 @@ class _FormScreenState extends State<FormScreen> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    keyboardType: TextInputType.number,
                     controller: difficultyController,
                     textAlign: TextAlign.center,
                     decoration: const InputDecoration(
@@ -94,7 +94,7 @@ class _FormScreenState extends State<FormScreen> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    number++;
+
                   },
                   child: const Text("Adicionar"),
                 )
