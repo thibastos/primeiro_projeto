@@ -80,7 +80,7 @@ class _FormScreenState extends State<FormScreen> {
                     child: TextFormField(
                       onChanged: (text) {
                         setState(() {
-                          imageController.text;
+                          
                         });
                       },
                       validator: (value) {
