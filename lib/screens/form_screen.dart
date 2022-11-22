@@ -64,6 +64,7 @@ class _FormScreenState extends State<FormScreen> {
                         imageController.text;
                       });
                     },
+                    keyboardType: TextInputType.url,
                     controller: imageController,
                     textAlign: TextAlign.center,
                     decoration: const InputDecoration(
@@ -94,7 +95,7 @@ class _FormScreenState extends State<FormScreen> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-
+                   
                   },
                   child: const Text("Adicionar"),
                 )
