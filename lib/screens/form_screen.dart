@@ -79,9 +79,7 @@ class _FormScreenState extends State<FormScreen> {
                     padding: const EdgeInsets.all(8.0),
                     child: TextFormField(
                       onChanged: (text) {
-                        setState(() {
-                          
-                        });
+                        setState(() {});
                       },
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -124,11 +122,10 @@ class _FormScreenState extends State<FormScreen> {
                         print(nameController.text);
                         print(difficultyController.text);
                         print(imageController.text);
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text("Printando tarefa..."),
-                          )
-                        );
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(const SnackBar(
+                          content: Text("Printando tarefa..."),
+                        ));
                         Navigator.pop(context);
                       }
                     },
