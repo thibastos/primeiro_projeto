@@ -20,7 +20,10 @@ class _InitialScreenState extends State<InitialScreen> {
           "Tarefas",
         ),
       ),
-      body: ListView(children: TaskInherited.of(context).taskList),
+      body: ListView(
+        children: TaskInherited.of(context).taskList,
+        padding: EdgeInsets.only(top: 8, bottom: 120),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
