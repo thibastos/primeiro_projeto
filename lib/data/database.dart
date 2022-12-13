@@ -1,18 +1,20 @@
-import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+import 'package:primeiro_projeto/components/task.dart';
+import 'package:primeiro_projeto/data/task_dao.dart';
+import 'package:sqflite/sqflite.dart';
 
 Future<Database> getDatabase() async {
   final String path = join(await getDatabasesPath(), 'task.db');
-  return openDatabase(path, onCreate: (db, version) {
-    db.execute(tableSql);
-  }, version: 1,);
+  return openDatabase(
+    path,
+    onCreate: (db, version) {
+      db.execute(TaskDao.tableSql);
+    },
+    version: 1,
+  );
 }
- const String tableSql = 'CREATE TABLE $_tablename('
-     '$_name TEXT, '
-     '$_difficulty INTEGER, '
-     '$_image TEXT';
 
-const String _tablename = 'taskTable';
-const String _name = 'name';
-const String _difficulty = 'difficulty';
-const String _image = 'image';
+save(Task tarefa) async {}
+Future<List<Task>> findAll() async {}
+Future<List<Task>> find(String nomeDaTarefa) async {}
+delete(String nomeDaTarefa) async {}
