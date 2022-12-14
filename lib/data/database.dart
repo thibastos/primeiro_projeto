@@ -13,8 +13,3 @@ Future<Database> getDatabase() async {
     version: 1,
   );
 }
-
-save(Task tarefa) async {}
-Future<List<Task>> findAll() async {}
-Future<List<Task>> find(String nomeDaTarefa) async {}
-delete(String nomeDaTarefa) async {}
