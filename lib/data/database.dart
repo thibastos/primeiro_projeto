@@ -1,5 +1,4 @@
 import 'package:path/path.dart';
-import 'package:primeiro_projeto/components/task.dart';
 import 'package:primeiro_projeto/data/task_dao.dart';
 import 'package:sqflite/sqflite.dart';
 
