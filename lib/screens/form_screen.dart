@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:primeiro_projeto/data/task_inherited.dart';
 
 class FormScreen extends StatefulWidget {
-  const FormScreen({super.key, required this.taskContext});
+  const FormScreen({Key? key, required this.taskContext}) : super(key: key);
 
   final BuildContext taskContext;
 

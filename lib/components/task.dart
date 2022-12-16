@@ -6,7 +6,7 @@ class Task extends StatefulWidget {
   final String foto;
   final int dificuldade;
 
-  Task(this.nome, this.foto, this.dificuldade, {super.key});
+  Task(this.nome, this.foto, this.dificuldade, {Key? key}) : super(key: key);
 
   int nivel = 0;
 
